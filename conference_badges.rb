@@ -20,4 +20,9 @@ def assign_rooms(attendees)
   end
   return room_assignments
 end
+
+def printer(attendees)
+attendees.each do||
+end
+
 # Write your code here.

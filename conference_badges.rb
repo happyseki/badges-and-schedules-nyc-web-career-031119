@@ -22,9 +22,12 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
- output  = batch_badge_creator(attendees)
+output  = batch_badge_creator(attendees)
  message  = assign_rooms(attendees)
    output.each do |string|
+     puts string
+   end
+   message.each do |string|
      puts string
    end
 end

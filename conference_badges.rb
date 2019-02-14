@@ -22,7 +22,11 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-attendees.each do||
+ output  = batch_badge_creator(attendees)
+ message  = assign_rooms(attendees)
+   output.each do |string|
+     puts string
+   end
 end
 
 # Write your code here.
